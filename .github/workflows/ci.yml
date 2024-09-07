@@ -62,7 +62,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
       - name: Lint code
-        uses: golangci/golangci-lint-action@v4
+        uses: golangci/golangci-lint-action@v6
         with:
           version: ${{ env.GOLANGCILINT_VERSION }}
           args: --issues-exit-code=0 --out-format=checkstyle:reports/lint-report.xml
